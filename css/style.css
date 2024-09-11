@@ -1,0 +1,539 @@
+/* Importar la fuente Varela Round de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+}
+
+.header__logo img {
+    height: auto;
+    width: 6rem;
+}
+
+.header__nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #152232;
+    font-weight: bold;
+    transition: color 0.4s ease
+}
+.header__nav a:hover{
+    text-decoration: none;
+    color: #00d6b3; /* Color de hover para nav */
+}
+.text-container {
+    max-width: 45rem; /* Ajusta el valor según lo que necesites */
+    margin: 0 auto;
+    padding: 0 1rem; /* Añade un pequeño padding para que el texto no esté pegado a los bordes */
+}
+.main {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #2b534cab;
+}
+
+.main__h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #152232;
+    font-weight: bolder;
+}
+
+.main__h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #152232;
+    font-weight: lighter;
+}
+
+.sectio-info, .section-contact {
+    text-align: center;
+    padding: 2rem;
+    background-color: #dddbdb;
+}
+
+.sectio-info__h2, .section-contact__h2 {
+    font-size: 2rem;
+    color: #152232;
+    font-weight: bolder;
+}
+
+.sectio-info__h3, .section-contact__h3 {
+    font-size: 1.2rem;
+    color: #152232;
+    font-weight: lighter;
+}
+
+.section-images {
+    display: flex;
+    justify-content: center;
+}
+.section-images img {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+.section-contact{
+    background-color: #dddbdb;
+}
+
+.section-contact-groups{
+    display: flex;
+}
+/* Estilos para el formulario */
+.section-contact-groups__form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espacio entre los elementos */
+    max-width: 500px; /* Ajusta el ancho máximo del formulario según sea necesario */
+    margin: 0 auto; /* Centra el formulario */
+    padding-right: 2rem;
+  }
+  
+  .section-contact-form__form-label {
+    font-size: 1rem; /* Tamaño de fuente para las etiquetas */
+    margin-bottom: 8px; /* Espacio debajo de las etiquetas */
+    text-align: start;
+  }
+  
+  .section-contact-form__form-input,
+  .section-contact-form__form-textarea {
+    width: 100%; /* Asegura que los campos ocupen todo el ancho disponible */
+    padding: 0.5rem; /* Espacio interno de los campos */
+    border: 2px solid #969696;
+    border-radius: 8px;
+    font-size: 1rem; /* Tamaño de fuente para los campos */
+    background-color: #fff; /* Fondo blanco para los campos */
+    transition: 0.3s ease;
+    font-family: 'Varela Round', sans-serif;
+    
+  }
+  
+  .section-contact-form__form-input:focus,
+  .section-contact-form__form-textarea:focus {
+    border-color: #00d6b3; /* Color del borde al enfocar */
+    outline: none; /* Elimina el contorno predeterminado */
+  }
+  
+  .section-contact-form__form-textarea {
+    resize: none; /* Permite redimensionar el área de texto verticalmente */
+    overflow: auto;
+    height: 100px; /* Ajusta la altura inicial del área de texto */
+  } 
+  
+  .section-contact-form__form-button {
+    margin: 0;  
+    padding: 0.5rem 1rem;
+    background-color: #00a187; /* Color de fondo del botón */
+    color: #152232;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    font-size: 1rem; 
+    cursor: pointer; 
+    width: 150px;
+    text-align: center; /* Centra el texto dentro del botón */
+    display: inline-block;
+  }
+  
+  .section-contact-form__form-button:hover {
+    background-color: #00d6b3; /* Color de hover para botón */
+    transform: scale(1.05); /* Añadido para agrandar los botones al pasar el mouse */
+    color: #152232; /* Asegura que el color del texto se mantenga blanco en el hover */
+  }
+  
+
+.section-contact__h2{
+    font-weight: bolder;
+}
+.section-contact__h3{
+    font-weight: lighter;
+}
+
+.section-contact__h3 a{
+    color:#152232;
+    transition: color 0.3s ease;
+}
+.section-contact__h3 a:hover{
+    color: #00a187;
+}
+.section-contact__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    
+}
+  .section-contact__button-1, .section-contact__button-2 {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #00a187;
+    color: #152232;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    width: 150px; /* Añadido para que los botones tengan el mismo tamaño */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+.section-contact__button-1:hover, .section-contact__button-2:hover{
+    background-color: #00d6b3; /* Color de hover para botón */
+    transform: scale(1.05); /* Añadido para agrandar los botones al pasar el mouse */
+    color: #152232; /* Asegura que el color del texto se mantenga blanco en el hover */
+}
+
+.section-services {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4; /* Puedes ajustar el color de fondo */
+}
+
+.section-services__h2 {
+    font-size: 2rem;
+    color: #152232;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-services__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.section-services__item {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%; /* Puedes ajustar el ancho según tus necesidades */
+    max-width: 300px; /* Ajusta el ancho máximo si es necesario */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Añadido para asegurar que todas las tarjetas sean iguales */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el espacio para el botón */
+}
+
+.section-services__item-title {
+    font-size: 1.5rem;
+    color: #152232;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+.section-services__item-description {
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.section-services__button {
+    margin-top: 1rem; /* Ajusta el margen superior para separar el botón del contenido */
+    padding: 0.5rem 1rem;
+    background-color: #00a187;
+    color: #152232;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    align-self: center; /* Asegura que el botón esté centrado horizontalmente */
+}
+
+.section-services__button:hover {
+    background-color: #00d6b3;
+    transform: scale(1.05);
+    color: #152232;
+}
+.section-faq {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.section-faq__h2 {
+    font-size: 1.8rem;
+    color: #152232;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.section-faq__p {
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.section-faq__button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #00a187;
+    color: #152232;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    width: 150px;
+}
+
+.section-faq__button:hover {
+    background-color: #00d6b3;
+    transform: scale(1.05);
+    color: #152232;
+}
+.section-map {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según sea necesario */
+    background-color: #f4f4f4; /* Color de fondo para la sección */
+}
+
+.map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #2b534cab;
+    color: black;
+}
+
+.footer__social a {
+    margin: 0 0.5rem;
+}
+.footer__social img{
+    transition: transform 0.3s ease, filter 0.3s ease;  
+}
+.footer__social a:hover img{
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+.footer__social img {
+    width: 30px;
+    height: 30px;
+}
+
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 1rem;
+        flex-direction: column; /* Cambia a columna para pantallas más pequeñas */
+        align-items: center;
+    }
+
+    .header__logo img {
+        width: 5rem; /* Ajusta el tamaño del logo */
+    }
+
+    .header__nav {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .header__nav a {
+        margin: 0 0.5rem;
+    }
+
+    .text-container {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .main__h1 {
+        font-size: 2.5rem;
+    }
+
+    .main__h2 {
+        font-size: 1.5rem;
+    }
+
+    .sectio-info__h2, .section-contact__h2 {
+        font-size: 1.5rem;
+    }
+
+    .sectio-info__h3, .section-contact__h3 {
+        font-size: 1rem;
+    }
+
+    .section-contact__button-1, .section-contact__button-2 {
+        width: 120px;
+        padding: 0.5rem;
+    }
+
+    .footer__social img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Estilos para pantallas menores a 768px (tabletas en modo vertical y móviles grandes) */
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+        flex-direction: column; /* Cambia a columna para móviles y tabletas */
+        align-items: center;
+    }
+
+    .header__logo img {
+        width: 5rem auto; /* Ajusta el tamaño del logo */
+    }
+
+    .header__nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__nav a {
+        margin: 0 0.5rem;
+    }
+
+    .text-container {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .main__h1 {
+        font-size: 2.2rem;
+    }
+
+    .main__h2 {
+        font-size: 1.3rem;
+    }
+
+    .sectio-info__h2, .section-contact__h2 {
+        font-size: 1.3rem;
+    }
+
+    .sectio-info__h3, .section-contact__h3 {
+        font-size: 0.9rem;
+    }
+
+    .section-contact__button-1, .section-contact__button-2 {
+        width: 120px;
+        padding: 0.5rem;
+    }
+
+    .footer__social img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .section-services__item {
+        width: 100%;
+        max-width: 280px; /* Ajusta el ancho máximo según sea necesario */
+    }
+    .section-contact-form__form-button{
+        width: 5rem;
+    }
+
+    .section-map {
+        height: 300px; /* Ajusta la altura según sea necesario */
+    }
+    .section-contact-groups {
+        flex-direction: column;
+    }
+}
+
+
+/* Estilos para pantallas menores a 480px (móviles muy pequeños) */
+@media (max-width: 480px) {
+
+    .header__nav {
+        flex-direction: column; /* Cambia a columna para móviles pequeños */
+        align-items: center;
+    }
+
+    .header__nav a {
+        margin: 0.2rem; /* Ajusta el margen para enlaces de navegación */
+    }
+
+    .main__h1 {
+        font-size: 1.8rem;
+    }
+
+    .main__h2 {
+        font-size: 1.1rem;
+    }
+
+    .sectio-info__h2, .section-contact__h2 {
+        font-size: 1.2rem;
+    }
+
+    .sectio-info__h3, .section-contact__h3 {
+        font-size: 0.8rem;
+    }
+
+    .section-contact__button-1, .section-contact__button-2 {
+        width: 100px;
+        padding: 0.4rem;
+    }
+
+    .footer__social img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .section-services__item {
+        width: 100%;
+        max-width: 100%; /* Asegura que el item ocupe todo el ancho disponible */
+    }
+
+    .section-map {
+        height: 200px; /* Ajusta la altura según sea necesario */
+    }
+}
+
+@media (pointer: coarse) {
+    .header__nav a:hover,
+    .section-contact__button-1:hover,
+    .section-contact__button-2:hover,
+    .footer__social a:hover img {
+        background-color: initial;
+        color: initial;
+        transform: none;
+        filter: none;
+        text-decoration: none; /* Desactiva el subrayado en los enlaces */
+    }
+
+    .section-contact__button-1,
+    .section-contact__button-2 {
+        background-color: #00a187; /* Color de fondo predeterminado */
+        color: #152232; /* Color del texto predeterminado */
+        transition: none; /* Elimina la transición de hover */
+    }
+}
