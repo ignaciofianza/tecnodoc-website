@@ -14,7 +14,11 @@
     />
     <meta name="author" content="Ignacio Fianza" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="icon" href="../images/favicon.png" type="image/png" />
     <title>TecnoDoc</title>
 
@@ -68,102 +72,163 @@
   <body>
     <header class="header">
       <a href="http://tecnodoc.ignaciofianza.com" class="header__logo"
-        ><img src="../images/tecnodoc-logo.png" alt="TecnoDoc Logo"
+        ><img src="./images/tecnodoc-logo.png" alt="TecnoDoc Logo"
       /></a>
       <nav class="header__nav">
         <a href="http://tecnodoc.ignaciofianza.com/" class="header__nav-inicio"
           >Inicio</a
         >
-        <a href="../pages/servicios.html" class="header__nav-servicios"
-          >Servicios</a
-        >
-        <a href="../pages/faq.html" class="header__nav-faq">FAQ</a>
-        <a href="../pages/contacto.html" class="header__nav-contacto"
-          >Contacto</a
-        >
+        <a href="/servicios" class="header__nav-servicios">Servicios</a>
+        <a href="/faq" class="header__nav-faq">FAQ</a>
+        <a href="/contacto" class="header__nav-contacto">Contacto</a>
       </nav>
     </header>
-  <main class="main">
-    <div class="text-container">
-      <h1 class="main__h1">TecnoDoc</h1>
-      <h2 class="main__h2">Contacto</h2>
-    </div>
-  </main>
-  <section class="sectio-info">
-    <div class="text-container">
-      <h2 class="sectio-info__h2">¿Cómo puedes contactarnos?</h2>
-      <h3 class="sectio-info__h3">
-        Si tienes alguna pregunta, necesitas soporte o deseas solicitar un presupuesto, no dudes en ponerte en contacto
-        con nosotros a través de los métodos que prefieras. Estamos aquí para ayudarte.
-      </h3>
-    </div>
-  </section>
-  <section class="section-map">
-    <div class="map-container">
-      <iframe src="https://maps.google.com/maps?q=-34.8547566,-56.194248&hl=es&z=14&output=embed" frameborder="0"
-        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-  </section>
-  <section class="section-contact">
-    <div class="section-contact-groups">
-      <div class="section-contact-groups__form">
-        <h2 class="sectio-info__h2">¡Rellená este formulario y te contactamos!</h2>
-        <form class="section-contact-groups__form-content"
-          action="https://docs.google.com/forms/d/e/1FAIpQLSd9K4zRM_Vr7RjBgYKPvfFYc3PfDYi75PjYaGA73EkzQmCd2Q/formResponse"
-          method="post">
-          <label class="section-contact-form__form-label" for="nombre">Nombre (obligatorio):</label>
-          <input class="section-contact-form__form-input" type="text" id="nombre" name="entry.1001160759" required autocomplete="name">
-
-          <label class="section-contact-form__form-label" for="apellido">Apellido (obligatorio):</label>
-          <input class="section-contact-form__form-input" type="text" id="apellido" name="entry.626071617" required autocomplete="family-name">
-
-          <label class="section-contact-form__form-label" for="email">Correo electrónico:</label>
-          <input class="section-contact-form__form-input" type="email" id="email" name="entry.1620095493" autocomplete="email">
-
-          <label class="section-contact-form__form-label" for="telefono">Teléfono (obligatorio):</label>
-          <input class="section-contact-form__form-input" type="tel" id="telefono" name="entry.2066310966" required autocomplete="tel">
-
-          <label class="section-contact-form__form-label" for="motivo">Motivo:</label>
-          <textarea class="section-contact-form__form-textarea" id="motivo" name="entry.618465677" autocomplete="off"></textarea>
-
-          <input class="section-contact-form__form-button" type="submit" value="Enviar">
-        </form>
+    <main class="main">
+      <div class="text-container">
+        <h1 class="main__h1">TecnoDoc</h1>
+        <h2 class="main__h2">Contacto</h2>
       </div>
-      <div class="contact-group">
-        <div class="text-container">
-          <hr/>
-          <h2 class="section-contact__h2">Nuestros Datos</h2>
-          <h3 class="section-contact__h3">
-            Ignacio Fianza<br>
-            <a href="mailto:tecnodoc@ignaciofianza.com">tecnodoc@ignaciofianza.com</a><br>
-            <a href="tel:+590 98688030">+598 98 688 030</a>
-          </h3>
+    </main>
+    <section class="sectio-info">
+      <div class="text-container">
+        <h2 class="sectio-info__h2">¿Cómo puedes contactarnos?</h2>
+        <h3 class="sectio-info__h3">
+          Si tienes alguna pregunta, necesitas soporte o deseas solicitar un
+          presupuesto, no dudes en ponerte en contacto con nosotros a través de
+          los métodos que prefieras. Estamos aquí para ayudarte.
+        </h3>
+      </div>
+    </section>
+    <section class="section-map">
+      <div class="map-container">
+        <iframe
+          src="https://maps.google.com/maps?q=-34.8547566,-56.194248&hl=es&z=14&output=embed"
+          frameborder="0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </section>
+    <section class="section-contact">
+      <div class="section-contact-groups">
+        <div class="section-contact-groups__form">
+          <h2 class="sectio-info__h2">
+            ¡Rellená este formulario y te contactamos!
+          </h2>
+          <form
+            class="section-contact-groups__form-content"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSd9K4zRM_Vr7RjBgYKPvfFYc3PfDYi75PjYaGA73EkzQmCd2Q/formResponse"
+            method="post"
+          >
+            <label class="section-contact-form__form-label" for="nombre"
+              >Nombre (obligatorio):</label
+            >
+            <input
+              class="section-contact-form__form-input"
+              type="text"
+              id="nombre"
+              name="entry.1001160759"
+              required
+              autocomplete="name"
+            />
+
+            <label class="section-contact-form__form-label" for="apellido"
+              >Apellido (obligatorio):</label
+            >
+            <input
+              class="section-contact-form__form-input"
+              type="text"
+              id="apellido"
+              name="entry.626071617"
+              required
+              autocomplete="family-name"
+            />
+
+            <label class="section-contact-form__form-label" for="email"
+              >Correo electrónico:</label
+            >
+            <input
+              class="section-contact-form__form-input"
+              type="email"
+              id="email"
+              name="entry.1620095493"
+              autocomplete="email"
+            />
+
+            <label class="section-contact-form__form-label" for="telefono"
+              >Teléfono (obligatorio):</label
+            >
+            <input
+              class="section-contact-form__form-input"
+              type="tel"
+              id="telefono"
+              name="entry.2066310966"
+              required
+              autocomplete="tel"
+            />
+
+            <label class="section-contact-form__form-label" for="motivo"
+              >Motivo:</label
+            >
+            <textarea
+              class="section-contact-form__form-textarea"
+              id="motivo"
+              name="entry.618465677"
+              autocomplete="off"
+            ></textarea>
+
+            <input
+              class="section-contact-form__form-button"
+              type="submit"
+              value="Enviar"
+            />
+          </form>
         </div>
-        <div class="section-contact__buttons">
-          <a href="https://wa.me/+59898688030" class="section-contact__button-1">WhatsApp</a>
-          <a href="mailto:tecnodoc@ignaciofianza.com" class="section-contact__button-2">Email</a>
+        <div class="contact-group">
+          <div class="text-container">
+            <hr />
+            <h2 class="section-contact__h2">Nuestros Datos</h2>
+            <h3 class="section-contact__h3">
+              Ignacio Fianza<br />
+              <a href="mailto:tecnodoc@ignaciofianza.com"
+                >tecnodoc@ignaciofianza.com</a
+              ><br />
+              <a href="tel:+590 98688030">+598 98 688 030</a>
+            </h3>
+          </div>
+          <div class="section-contact__buttons">
+            <a
+              href="https://wa.me/+59898688030"
+              class="section-contact__button-1"
+              >WhatsApp</a
+            >
+            <a
+              href="mailto:tecnodoc@ignaciofianza.com"
+              class="section-contact__button-2"
+              >Email</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <h3 class="footer__h3">TecnoDoc</h3>
-    <div class="footer__social">
-      <a class="footer__social-instagram" href="http://instagram.com/"
-        ><img src="../images/instagram.webp" alt="Instagram Logo"
-      /></a>
-      <a class="footer__social-x" href="http://x.com/"
-        ><img src="../images/x.webp" alt="X Logo"
-      /></a>
-      <a class="footer__social-tiktok" href="http://tiktok.com/"
-        ><img src="../images/tiktok.webp" alt="TikTok Logo"
-      /></a>
-      <a class="footer__social-facebook" href="http://facebook.com/"
-        ><img src="../images/facebook.webp" alt="Facebook Logo"
-      /></a>
-    </div>
-    <p class="footer__p-copyright">&copy;2024 TecnoDoc</p>
-  </footer>
-</body>
-
+    </section>
+    <footer class="footer">
+      <h3 class="footer__h3">TecnoDoc</h3>
+      <div class="footer__social">
+        <a class="footer__social-instagram" href="http://instagram.com/"
+          ><img src="../images/instagram.webp" alt="Instagram Logo"
+        /></a>
+        <a class="footer__social-x" href="http://x.com/"
+          ><img src="../images/x.webp" alt="X Logo"
+        /></a>
+        <a class="footer__social-tiktok" href="http://tiktok.com/"
+          ><img src="../images/tiktok.webp" alt="TikTok Logo"
+        /></a>
+        <a class="footer__social-facebook" href="http://facebook.com/"
+          ><img src="../images/facebook.webp" alt="Facebook Logo"
+        /></a>
+      </div>
+      <p class="footer__p-copyright">&copy;2024 TecnoDoc</p>
+    </footer>
+  </body>
 </html>
