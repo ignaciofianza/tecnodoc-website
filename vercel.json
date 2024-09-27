@@ -1,8 +1,15 @@
 {
-    "rewrites": [
-      {
-        "source": "/:path",
-        "destination": "/pages/:path.html"
-      }
-    ]
-  }
+  "redirects": [
+    {
+      "source": "/:path.html",
+      "destination": "/:path",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path",
+      "destination": "/pages/:path.html"
+    }
+  ]
+}
