@@ -1,0 +1,231 @@
+/* Variables de color */
+:root {
+  --color-fondo: #152232;
+  --color-texto: #ffffff;
+  --color-icono: #5EBC67;
+  --color-error: #FF0000;
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  padding: 20px 10px;
+  background-color: var(--color-fondo);
+  border-bottom: 1px solid var(--color-icono);
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Vertical en móviles */
+}
+
+.header__nav-item {
+  margin: 10px 0;
+}
+
+.header__nav-link {
+  color: var(--color-icono);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.header__nav-link:hover {
+  color: var(--color-texto);
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 20px; /* Espaciado en móviles */
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 28px; /* Más pequeño en móviles */
+  margin-bottom: 10px;
+}
+
+.hero__description {
+  font-size: 16px; /* Más pequeño en móviles */
+  margin-bottom: 20px;
+}
+
+.hero__cta {
+  background-color: var(--color-icono);
+  color: var(--color-texto);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero__cta:hover {
+  background-color: var(--color-texto);
+  color: var(--color-icono);
+}
+
+/* Servicios Section */
+.services {
+  padding: 60px 20px; /* Espaciado en móviles */
+}
+
+.services__title {
+  text-align: center;
+  font-size: 24px; /* Más pequeño en móviles */
+  margin-bottom: 30px;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column; /* Vertical en móviles */
+  align-items: center;
+}
+
+.services__item {
+  background-color: #1b2a3b;
+  border-radius: 10px;
+  margin: 15px 0; /* Espaciado vertical */
+  padding: 20px;
+  text-align: center;
+  width: 90%; /* Responsive */
+  max-width: 300px; /* Ancho máximo */
+  transition: transform 0.3s;
+}
+
+.services__item:hover {
+  transform: scale(1.05);
+}
+
+.services__icon {
+  font-size: 40px;
+  color: var(--color-icono);
+  margin-bottom: 10px;
+}
+
+.services__name {
+  font-size: 18px; /* Más pequeño en móviles */
+  margin: 10px 0;
+}
+
+.services__description {
+  font-size: 14px; /* Más pequeño en móviles */
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px; /* Espaciado en móviles */
+  background-color: #1b2a3b;
+}
+
+.contact__title {
+  text-align: center;
+  font-size: 24px; /* Más pequeño en móviles */
+  margin-bottom: 20px;
+}
+
+.contact__form {
+  max-width: 400px; /* Ancho máximo en móviles */
+  margin: 0 auto;
+}
+
+.contact__form-group {
+  margin-bottom: 20px;
+}
+
+.contact__input,
+.contact__textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-icono);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--color-texto);
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+  outline: none;
+  border-color: var(--color-texto);
+}
+
+.contact__submit {
+  background-color: var(--color-icono);
+  color: var(--color-texto);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact__submit:hover {
+  background-color: var(--color-texto);
+  color: var(--color-icono);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 768px) {
+  .header__nav-list {
+    flex-direction: row; /* Horizontal en pantallas más grandes */
+  }
+
+  .header__nav-item {
+    margin: 0 10px; /* Espaciado horizontal */
+  }
+
+  .hero__title {
+    font-size: 36px; /* Aumentar tamaño en pantallas más grandes */
+  }
+
+  .hero__description {
+    font-size: 18px; /* Aumentar tamaño en pantallas más grandes */
+  }
+
+  .services__title {
+    font-size: 28px; /* Aumentar tamaño en pantallas más grandes */
+  }
+
+  .services__item {
+    width: 45%; /* Ancho más grande en pantallas más grandes */
+  }
+
+  .contact__form {
+    max-width: 600px; /* Ancho máximo en pantallas más grandes */
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__item {
+    width: 30%; /* Ancho aún más grande en pantallas grandes */
+  }
+}

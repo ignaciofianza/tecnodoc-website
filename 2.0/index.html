@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tecnodoc - Servicio Técnico</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__logo">Tecnodoc</h1>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#inicio" class="header__nav-link">Inicio</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#servicios" class="header__nav-link">Servicios</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contacto" class="header__nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="hero__container">
+        <h2 class="hero__title">El Mejor Servicio Técnico</h2>
+        <p class="hero__description">
+          Reparamos tus dispositivos con la mayor rapidez y eficiencia.
+        </p>
+        <a href="#servicios" class="hero__cta">Conocé nuestros servicios</a>
+      </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="services">
+      <div class="services__container">
+        <h2 class="services__title">Nuestros Servicios</h2>
+        <div class="services__list">
+          <div class="services__item">
+            <i class="bi bi-phone services__icon"></i>
+            <h3 class="services__name">Reparación de Teléfonos</h3>
+            <p class="services__description">
+              Arreglamos todo tipo de teléfonos móviles, con piezas originales y
+              garantía.
+            </p>
+          </div>
+          <div class="services__item">
+            <i class="bi bi-laptop services__icon"></i>
+            <h3 class="services__name">Mantenimiento de Computadoras</h3>
+            <p class="services__description">
+              Optimización, limpieza y reparación de computadoras y notebooks.
+            </p>
+          </div>
+          <div class="services__item">
+            <i class="bi bi-controller services__icon"></i>
+            <h3 class="services__name">Consolas de Videojuegos</h3>
+            <p class="services__description">
+              Reparación de PlayStations, Xbox, Nintendo y más.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact">
+      <div class="contact__container">
+        <h2 class="contact__title">Contacto</h2>
+        <form class="contact__form">
+          <div class="contact__form-group">
+            <input type="text" class="contact__input" placeholder="Tu nombre" />
+          </div>
+          <div class="contact__form-group">
+            <input
+              type="email"
+              class="contact__input"
+              placeholder="Tu correo"
+            />
+          </div>
+          <div class="contact__form-group">
+            <textarea
+              class="contact__textarea"
+              rows="5"
+              placeholder="Tu mensaje"
+            ></textarea>
+          </div>
+          <button type="submit" class="contact__submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__text">
+        © 2024 Tecnodoc. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
