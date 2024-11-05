@@ -1,0 +1,13 @@
+# Permitir acceso a todas las páginas
+User-agent: *
+Disallow:
+
+# Bloquear el acceso a las carpetas privadas
+Disallow: /private/
+Disallow: /admin/
+
+# Permitir rastreo del favicon
+Allow: /img/favicon.ico
+
+# Sitemap
+Sitemap: https://tecnodoc.ignaciofianza.com/sitemap.xml
